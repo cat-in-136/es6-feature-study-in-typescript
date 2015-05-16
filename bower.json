@@ -1,0 +1,25 @@
+{
+  "name": "es6",
+  "version": "0.0.0",
+  "description": "ES6 feature study in TypeScript",
+  "main": "test.html",
+  "keywords": [
+    "es6",
+    "typescript"
+  ],
+  "authors": [
+    "@cat_in_136"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "typings",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "qunit": "~1.18.0"
+  }
+}
