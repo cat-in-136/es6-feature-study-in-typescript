@@ -10,10 +10,14 @@
     "typescript": "~1.5.0-beta",
     "grunt-typescript": "~0.6.2",
     "tsd": "~0.6.0",
-    "grunt-tsd": "~0.1.0"
+    "grunt-tsd": "~0.1.0",
+    "node-qunit-phantomjs": "~1.2.0"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "compile": "grunt compile",
+    "test": "node-qunit-phantomjs test.html"
+  },
   "author": "@cat_in_136",
   "license": "MIT"
 }

@@ -44,4 +44,7 @@ module.exports = function (grunt) {
     "tsd:refresh",
     "typescript:base"
   ]);
+  grunt.registerTask("default", [
+    "compile",
+  ]);
 };

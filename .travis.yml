@@ -1,5 +1,9 @@
 language: node_js
 node_js:
         - '0.10'
+install:
+        - npm install
 before_script:
-        - npm compile
+        - npm run compile
+script:
+        - npm run test
