@@ -262,3 +262,4 @@ QUnit.test("let", function (assert) {
     assert.equal(3, clickedItem);
     */
 });
+//# sourceMappingURL=script.js.map

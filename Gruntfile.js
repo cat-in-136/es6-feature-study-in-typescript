@@ -10,6 +10,18 @@ module.exports = function (grunt) {
         cleanBowerDir: false
       }
     },
+    tsd: {
+      refresh: {
+        options: {
+          command: "reinstall",
+          latest: true,
+          config: "./tsd.json",
+          opts: {
+          }
+        }
+        
+      }
+    },
     typescript: {
       base: {
         src: [
@@ -17,16 +29,19 @@ module.exports = function (grunt) {
         ],
         dest: "./script.js",
         options: {
-          comments: true
+          comments: true,
+          sourceMap: true
         }
       }
     }
   });
   grunt.loadNpmTasks("grunt-bower-task");
+  grunt.loadNpmTasks("grunt-tsd");
   grunt.loadNpmTasks("grunt-typescript");
 
   grunt.registerTask("compile", [
     "bower:install",
+    "tsd:refresh",
     "typescript:base"
   ]);
 };
